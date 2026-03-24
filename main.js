@@ -125,12 +125,17 @@ function renderGallery(filter = 'all') {
     if (!galleryContainer) return;
     galleryContainer.innerHTML = '';
 
-    const filteredStyles = hairstyles.filter(style => {
+    let filteredStyles = hairstyles.filter(style => {
         if (filter === 'all') return true;
         if (filter === 'women') return style.category.startsWith('women-');
         if (filter === 'men') return style.category.startsWith('men-');
         return style.category === filter;
     });
+
+    // 'All' 카테고리일 때만 랜덤으로 섞기
+    if (filter === 'all') {
+        filteredStyles = filteredStyles.sort(() => Math.random() - 0.5);
+    }
 
     filteredStyles.forEach((style, index) => {
         const item = createGalleryItem(style);
