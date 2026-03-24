@@ -4,7 +4,7 @@ const hairstyles = [
         name: '클래식 보브 컷',
         category: 'short',
         description: '깔끔하고 세련된 느낌의 정석 단발 스타일',
-        imageUrl: 'images/style1.jpg'
+        imageUrl: 'images/stlye1.jpg'
     },
     {
         id: 2,
