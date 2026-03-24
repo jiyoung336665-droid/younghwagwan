@@ -127,11 +127,10 @@ function renderGallery(filter = 'all') {
 categoryButtons.forEach(button => {
     button.addEventListener('click', (e) => {
         const category = button.getAttribute('data-category');
-        if (!category) return; // 페이지 이동 링크인 경우 JS 처리를 건너뜀
+        if (!category) return;
 
-        // 만약 현재 페이지가 index.html이 아니라면 메인으로 이동 후 필터링해야 함
-        if (!window.location.pathname.endsWith('index.html') && window.location.pathname !== '/') {
-            // 이 부분은 실제 서비스에서는 URL 파라미터 등을 사용할 수 있으나, 현재는 기본 이동만 지원
+        if (!window.location.pathname.endsWith('index.html') && window.location.pathname !== '/' && !window.location.pathname.includes('index.html')) {
+            window.location.href = 'index.html?category=' + category;
             return;
         }
 
@@ -176,6 +175,24 @@ function handleSendMessage() {
     }
 }
 
+// FAQ Button Handler
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('opt-btn')) {
+        const action = e.target.getAttribute('data-action');
+        
+        if (action === 'price') {
+            appendMessage('가격문의를 주셨군요!<br>아래 가격표를 확인해 주세요.', 'bot');
+            setTimeout(() => {
+                appendMessage('<img src="assets/price/price_list.jpg" alt="Price List" onerror="this.src=\'https://via.placeholder.com/300x400?text=Price+List+Coming+Soon\'">', 'bot');
+            }, 500);
+        } else if (action === 'location') {
+            appendMessage('영화관 헤어 스튜디오 위치는 다음과 같습니다:<br><strong>서울 마포구 토정로 17-9 HOMELEY</strong>', 'bot');
+        } else if (action === 'contact') {
+            appendMessage('스타일리스트와 직접 소통하고 싶으시면 인스타그램을 방문해 주세요!<br><a href="https://www.instagram.com/0_a_hair/?hl=ko" target="_blank" style="color:var(--accent-color); font-weight:700;">인스타그램 바로가기</a>', 'bot');
+        }
+    }
+});
+
 if (chatToggleBtn) chatToggleBtn.addEventListener('click', toggleChat);
 if (closeChat) closeChat.addEventListener('click', toggleChat);
 if (sendChat) sendChat.addEventListener('click', handleSendMessage);
@@ -186,4 +203,16 @@ if (chatInput) chatInput.addEventListener('keypress', (e) => {
 // 초기 렌더링
 window.addEventListener('DOMContentLoaded', () => {
     renderGallery();
+    
+    // URL 파라미터 체크 (다른 페이지에서 카테고리 클릭하고 올 때)
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get('category');
+    if (category) {
+        renderGallery(category);
+        const targetBtn = document.querySelector(`[data-category="${category}"]`);
+        if (targetBtn) {
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            targetBtn.classList.add('active');
+        }
+    }
 });

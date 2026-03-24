@@ -87,9 +87,31 @@
         <p>&copy; 2026 Younghwagwan. All rights reserved.</p>
     </footer>
 
-    <!-- Floating Chat Widget (Consistent with index.html) -->
+    <!-- Floating Chat Widget -->
     <div class="chat-widget" id="chat-widget">
-        <!-- ... existing chat widget structure ... -->
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h3>Style Consultant</h3>
+                <button class="close-chat" id="close-chat">&times;</button>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="message bot">
+                    안녕하세요. 나만의 특별함을 찾아가는 곳,<br>영화관 헤어 스튜디오입니다.
+                </div>
+                <div class="chat-options">
+                    <button class="opt-btn" data-action="price">가격문의</button>
+                    <button class="opt-btn" data-action="location">위치확인</button>
+                    <button class="opt-btn" data-action="contact">직접연락하기</button>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" placeholder="메시지를 입력하세요..." id="chat-input">
+                <button id="send-chat"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button class="chat-toggle-btn" id="chat-toggle-btn">
+            <i class="fas fa-comment-dots"></i>
+        </button>
     </div>
 
     <script src="main.js"></script>
