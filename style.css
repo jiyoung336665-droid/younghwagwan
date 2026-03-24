@@ -63,7 +63,7 @@ body {
 }
 
 .main-logo {
-    max-height: 120px; /* 로고 이미지 높이 조절 */
+    max-height: 180px; /* 로고 이미지 크기 1.5배 (120px -> 180px) */
     width: auto;
     display: block;
     transition: transform 0.3s ease;
@@ -74,11 +74,12 @@ body {
 }
 
 .tagline {
-    font-weight: 300;
-    color: var(--text-secondary);
-    letter-spacing: 2px;
+    font-weight: 400; /* 조금 더 가독성 있게 */
+    color: #8a3333; /* 톤다운된 우아한 붉은 계열 */
+    letter-spacing: 1.5px;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }
 
 /* Category Navigation */
