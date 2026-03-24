@@ -22,11 +22,29 @@
             <p class="tagline">당신의 스타일을 완성하는 공간</p>
         </div>
         <nav class="category-nav">
-            <button class="nav-btn active" data-category="all">전체</button>
-            <button class="nav-btn" data-category="short">단발/숏컷</button>
-            <button class="nav-btn" data-category="long">긴머리</button>
-            <button class="nav-btn" data-category="curly">펌/웨이브</button>
-            <button class="nav-btn" data-category="trend">트렌드</button>
+            <div class="nav-item">
+                <button class="nav-btn active" data-category="all">전체</button>
+            </div>
+            <div class="nav-item has-submenu">
+                <button class="nav-btn" data-category="women">Women Style</button>
+                <div class="submenu">
+                    <button class="sub-nav-btn" data-category="women-long">긴머리</button>
+                    <button class="sub-nav-btn" data-category="women-bob">단발</button>
+                    <button class="sub-nav-btn" data-category="women-short">숏컷</button>
+                    <button class="sub-nav-btn" data-category="women-perm">펌스타일</button>
+                    <button class="sub-nav-btn" data-category="women-color">컬러</button>
+                </div>
+            </div>
+            <div class="nav-item has-submenu">
+                <button class="nav-btn" data-category="men">Men's Style</button>
+                <div class="submenu">
+                    <button class="sub-nav-btn" data-category="men-short">숏기장</button>
+                    <button class="sub-nav-btn" data-category="men-medium">미디움기장</button>
+                    <button class="sub-nav-btn" data-category="men-long">롱기장</button>
+                    <button class="sub-nav-btn" data-category="men-perm">펌스타일</button>
+                    <button class="sub-nav-btn" data-category="men-color">컬러</button>
+                </div>
+            </div>
         </nav>
     </header>
 
