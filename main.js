@@ -127,7 +127,13 @@ function renderGallery(filter = 'all') {
 categoryButtons.forEach(button => {
     button.addEventListener('click', (e) => {
         const category = button.getAttribute('data-category');
-        if (!category) return; // Contact 버튼 등은 제외
+        if (!category) return; // 페이지 이동 링크인 경우 JS 처리를 건너뜀
+
+        // 만약 현재 페이지가 index.html이 아니라면 메인으로 이동 후 필터링해야 함
+        if (!window.location.pathname.endsWith('index.html') && window.location.pathname !== '/') {
+            // 이 부분은 실제 서비스에서는 URL 파라미터 등을 사용할 수 있으나, 현재는 기본 이동만 지원
+            return;
+        }
 
         categoryButtons.forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
@@ -139,12 +145,12 @@ categoryButtons.forEach(button => {
 const chatToggleBtn = document.getElementById('chat-toggle-btn');
 const chatWindow = document.getElementById('chat-window');
 const closeChat = document.getElementById('close-chat');
-const contactBtn = document.getElementById('contact-btn');
 const sendChat = document.getElementById('send-chat');
 const chatInput = document.getElementById('chat-input');
 const chatBody = document.getElementById('chat-body');
 
 function toggleChat() {
+    if (!chatWindow) return;
     chatWindow.classList.toggle('open');
     if (chatWindow.classList.contains('open')) {
         chatInput.focus();
@@ -164,8 +170,6 @@ function handleSendMessage() {
     if (text) {
         appendMessage(text, 'user');
         chatInput.value = '';
-        
-        // 간단한 자동 응답 시뮬레이션
         setTimeout(() => {
             appendMessage('메시지를 확인했습니다. 담당 스타일리스트가 곧 답변 드릴 예정입니다. 잠시만 기다려 주세요!', 'bot');
         }, 1000);
@@ -174,12 +178,6 @@ function handleSendMessage() {
 
 if (chatToggleBtn) chatToggleBtn.addEventListener('click', toggleChat);
 if (closeChat) closeChat.addEventListener('click', toggleChat);
-if (contactBtn) contactBtn.addEventListener('click', () => {
-    if (!chatWindow.classList.contains('open')) {
-        toggleChat();
-    }
-});
-
 if (sendChat) sendChat.addEventListener('click', handleSendMessage);
 if (chatInput) chatInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') handleSendMessage();
