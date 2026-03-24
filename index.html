@@ -48,6 +48,9 @@
                                 <button class="sub-nav-btn" data-category="men-color">컬러</button>
                             </div>
                         </div>
+                        <div class="nav-item">
+                            <button class="nav-btn" id="contact-btn">Contact</button>
+                        </div>
                     </nav>
                     <a href="https://www.instagram.com/0_a_hair/?hl=ko" target="_blank" class="instagram-link" title="Instagram 바로가기">
                         <i class="fab fa-instagram"></i>
@@ -56,6 +59,28 @@
             </div>
         </div>
     </header>
+
+    <!-- Floating Chat Widget -->
+    <div class="chat-widget" id="chat-widget">
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <h3>Style Consultant</h3>
+                <button class="close-chat" id="close-chat">&times;</button>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="message bot">
+                    안녕하세요! 영화 헤어스타일 갤러리입니다. <br>어떤 스타일이 궁금하신가요?
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" placeholder="메시지를 입력하세요..." id="chat-input">
+                <button id="send-chat"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button class="chat-toggle-btn" id="chat-toggle-btn">
+            <i class="fas fa-comment-dots"></i>
+        </button>
+    </div>
 
     <main class="gallery-wrapper">
         <div id="gallery-container" class="gallery-grid">

@@ -52,7 +52,7 @@ const hairstyles = [
         id: 8,
         name: '슬릭백언더컷',
         category: 'men-short',
-        description: '깔끔한 라인과 세련된 남성미가 돋보이는 스타일',
+        description: '깔끔하고 라인과 세련된 남성미가 돋보이는 스타일',
         imageUrl: 'images/style8.jpg'
     }
 ];
@@ -99,14 +99,13 @@ function createGalleryItem(style) {
 
 // 갤러리 렌더링 함수
 function renderGallery(filter = 'all') {
+    if (!galleryContainer) return;
     galleryContainer.innerHTML = '';
 
     const filteredStyles = hairstyles.filter(style => {
         if (filter === 'all') return true;
-        // 대분류(women, men) 선택 시 해당 하위 모든 스타일 포함
         if (filter === 'women') return style.category.startsWith('women-');
         if (filter === 'men') return style.category.startsWith('men-');
-        // 세부 분류 선택 시 정확히 일치하는 스타일만 포함
         return style.category === filter;
     });
 
@@ -127,18 +126,63 @@ function renderGallery(filter = 'all') {
 // 카테고리 버튼 이벤트 리스너
 categoryButtons.forEach(button => {
     button.addEventListener('click', (e) => {
-        // 모든 버튼에서 active 클래스 제거
-        categoryButtons.forEach(btn => btn.classList.remove('active'));
-        
-        // 클릭된 버튼에 active 추가
-        button.classList.add('active');
-
-        // 필터링 적용
         const category = button.getAttribute('data-category');
-        renderGallery(category);
+        if (!category) return; // Contact 버튼 등은 제외
 
-        // 서브메뉴 버튼 클릭 시 메인 버튼도 active 표시를 주고 싶다면 추가 로직 가능
+        categoryButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        renderGallery(category);
     });
+});
+
+// --- Chat Widget Logic ---
+const chatToggleBtn = document.getElementById('chat-toggle-btn');
+const chatWindow = document.getElementById('chat-window');
+const closeChat = document.getElementById('close-chat');
+const contactBtn = document.getElementById('contact-btn');
+const sendChat = document.getElementById('send-chat');
+const chatInput = document.getElementById('chat-input');
+const chatBody = document.getElementById('chat-body');
+
+function toggleChat() {
+    chatWindow.classList.toggle('open');
+    if (chatWindow.classList.contains('open')) {
+        chatInput.focus();
+    }
+}
+
+function appendMessage(text, side) {
+    const msg = document.createElement('div');
+    msg.classList.add('message', side);
+    msg.innerHTML = text;
+    chatBody.appendChild(msg);
+    chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+function handleSendMessage() {
+    const text = chatInput.value.trim();
+    if (text) {
+        appendMessage(text, 'user');
+        chatInput.value = '';
+        
+        // 간단한 자동 응답 시뮬레이션
+        setTimeout(() => {
+            appendMessage('메시지를 확인했습니다. 담당 스타일리스트가 곧 답변 드릴 예정입니다. 잠시만 기다려 주세요!', 'bot');
+        }, 1000);
+    }
+}
+
+if (chatToggleBtn) chatToggleBtn.addEventListener('click', toggleChat);
+if (closeChat) closeChat.addEventListener('click', toggleChat);
+if (contactBtn) contactBtn.addEventListener('click', () => {
+    if (!chatWindow.classList.contains('open')) {
+        toggleChat();
+    }
+});
+
+if (sendChat) sendChat.addEventListener('click', handleSendMessage);
+if (chatInput) chatInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') handleSendMessage();
 });
 
 // 초기 렌더링
