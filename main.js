@@ -1,10 +1,10 @@
 const hairstyles = [
     {
         id: 1,
-        name: '클래식보브컷',
-        category: 'women-bob',
-        description: '깔끔하고 세련된 느낌의 정석 단발 스타일',
-        imageUrl: 'images/stlye1.jpg'
+        name: '하이레이어드+C컬펌',
+        category: 'women-long',
+        description: '볼륨을 극대화 하는 스타일로 얼굴형 보완해주며<br>여성스러우며 생기 넘치는 스타일',
+        imageUrl: 'images/style1.jpg'
     },
     {
         id: 2,
