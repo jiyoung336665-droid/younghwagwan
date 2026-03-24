@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -14,40 +12,49 @@
 </head>
 <body>
     <header class="main-header">
-        <a href="https://www.instagram.com/0_a_hair/?hl=ko" target="_blank" class="instagram-link" title="Instagram 바로가기">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <div class="header-content">
-            <div class="logo-container">
-                <img src="assets/logo/logo.png" alt="Younghwagwan Logo" class="main-logo">
+        <div class="header-container">
+            <!-- 왼쪽 1/4: 로고 섹션 -->
+            <div class="logo-section">
+                <div class="logo-container">
+                    <img src="assets/logo/logo.png" alt="Younghwagwan Logo" class="main-logo">
+                </div>
+                <p class="tagline">나만의 특별한 스타일을 찾아가는 곳</p>
             </div>
-            <p class="tagline">나만의 특별한 스타일을 찾아가는 곳</p>
+
+            <!-- 오른쪽 3/4: 내비게이션 섹션 -->
+            <div class="nav-section">
+                <div class="nav-top-bar">
+                    <nav class="category-nav">
+                        <div class="nav-item">
+                            <button class="nav-btn active" data-category="all">All</button>
+                        </div>
+                        <div class="nav-item has-submenu">
+                            <button class="nav-btn" data-category="women">Women Style</button>
+                            <div class="submenu">
+                                <button class="sub-nav-btn" data-category="women-long">긴머리</button>
+                                <button class="sub-nav-btn" data-category="women-bob">단발</button>
+                                <button class="sub-nav-btn" data-category="women-short">숏컷</button>
+                                <button class="sub-nav-btn" data-category="women-perm">펌스타일</button>
+                                <button class="sub-nav-btn" data-category="women-color">컬러</button>
+                            </div>
+                        </div>
+                        <div class="nav-item has-submenu">
+                            <button class="nav-btn" data-category="men">Men's Style</button>
+                            <div class="submenu">
+                                <button class="sub-nav-btn" data-category="men-short">숏기장</button>
+                                <button class="sub-nav-btn" data-category="men-medium">미디움기장</button>
+                                <button class="sub-nav-btn" data-category="men-long">롱기장</button>
+                                <button class="sub-nav-btn" data-category="men-perm">펌스타일</button>
+                                <button class="sub-nav-btn" data-category="men-color">컬러</button>
+                            </div>
+                        </div>
+                    </nav>
+                    <a href="https://www.instagram.com/0_a_hair/?hl=ko" target="_blank" class="instagram-link" title="Instagram 바로가기">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <nav class="category-nav">
-            <div class="nav-item">
-                <button class="nav-btn active" data-category="all">All</button>
-            </div>
-            <div class="nav-item has-submenu">
-                <button class="nav-btn" data-category="women">Women Style</button>
-                <div class="submenu">
-                    <button class="sub-nav-btn" data-category="women-long">긴머리</button>
-                    <button class="sub-nav-btn" data-category="women-bob">단발</button>
-                    <button class="sub-nav-btn" data-category="women-short">숏컷</button>
-                    <button class="sub-nav-btn" data-category="women-perm">펌스타일</button>
-                    <button class="sub-nav-btn" data-category="women-color">컬러</button>
-                </div>
-            </div>
-            <div class="nav-item has-submenu">
-                <button class="nav-btn" data-category="men">Men's Style</button>
-                <div class="submenu">
-                    <button class="sub-nav-btn" data-category="men-short">숏기장</button>
-                    <button class="sub-nav-btn" data-category="men-medium">미디움기장</button>
-                    <button class="sub-nav-btn" data-category="men-long">롱기장</button>
-                    <button class="sub-nav-btn" data-category="men-perm">펌스타일</button>
-                    <button class="sub-nav-btn" data-category="men-color">컬러</button>
-                </div>
-            </div>
-        </nav>
     </header>
 
     <main class="gallery-wrapper">
