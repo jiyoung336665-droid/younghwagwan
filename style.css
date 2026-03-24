@@ -114,9 +114,11 @@ body {
 }
 
 .nav-btn.active {
-    background-color: var(--accent-color);
-    color: white;
-    box-shadow: 0 4px 15px var(--accent-glow);
+    color: var(--accent-color);
+    background-color: transparent; /* 원형 배경 제거 */
+    border-bottom: 2px solid var(--accent-color); /* 하단 라인으로 포인트 */
+    border-radius: 0; /* 둥근 모서리 제거하여 텍스트 강조 */
+    font-weight: 700;
 }
 
 /* Submenu Styles */
