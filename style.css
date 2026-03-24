@@ -244,15 +244,10 @@ body {
 .chat-header {
     background-color: var(--accent-color);
     color: white;
-    padding: 1.2rem;
+    padding: 0.5rem 1.2rem; /* 1.2rem -> 0.5rem으로 대폭 축소 */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* 버튼만 있으므로 오른쪽 정렬 */
     align-items: center;
-}
-
-.chat-header h3 {
-    font-size: 1rem;
-    font-weight: 700;
 }
 
 .close-chat {
