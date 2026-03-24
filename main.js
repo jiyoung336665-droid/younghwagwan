@@ -54,7 +54,30 @@ const hairstyles = [
         category: 'men-short',
         description: '깔끔하고 라인과 세련된 남성미가 돋보이는 스타일',
         imageUrl: 'images/style8.jpg'
-    }
+    },
+    // 추가 셋팅 (9-30)
+    { id: 9, name: '스타일준비중', category: 'women-long', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style9.jpg' },
+    { id: 10, name: '스타일준비중', category: 'women-bob', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style10.jpg' },
+    { id: 11, name: '스타일준비중', category: 'women-short', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style11.jpg' },
+    { id: 12, name: '스타일준비중', category: 'women-perm', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style12.jpg' },
+    { id: 13, name: '스타일준비중', category: 'women-color', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style13.jpg' },
+    { id: 14, name: '스타일준비중', category: 'men-short', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style14.jpg' },
+    { id: 15, name: '스타일준비중', category: 'men-medium', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style15.jpg' },
+    { id: 16, name: '스타일준비중', category: 'men-long', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style16.jpg' },
+    { id: 17, name: '스타일준비중', category: 'men-perm', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style17.jpg' },
+    { id: 18, name: '스타일준비중', category: 'men-color', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style18.jpg' },
+    { id: 19, name: '스타일준비중', category: 'women-long', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style19.jpg' },
+    { id: 20, name: '스타일준비중', category: 'women-bob', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style20.jpg' },
+    { id: 21, name: '스타일준비중', category: 'women-short', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style21.jpg' },
+    { id: 22, name: '스타일준비중', category: 'women-perm', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style22.jpg' },
+    { id: 23, name: '스타일준비중', category: 'women-color', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style23.jpg' },
+    { id: 24, name: '스타일준비중', category: 'men-short', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style24.jpg' },
+    { id: 25, name: '스타일준비중', category: 'men-medium', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style25.jpg' },
+    { id: 26, name: '스타일준비중', category: 'men-long', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style26.jpg' },
+    { id: 27, name: '스타일준비중', category: 'men-perm', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style27.jpg' },
+    { id: 28, name: '스타일준비중', category: 'men-color', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style28.jpg' },
+    { id: 29, name: '스타일준비중', category: 'women-long', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style29.jpg' },
+    { id: 30, name: '스타일준비중', category: 'women-bob', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style30.jpg' }
 ];
 
 const galleryContainer = document.getElementById('gallery-container');
