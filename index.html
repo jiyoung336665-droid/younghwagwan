@@ -1,18 +1,41 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hairstyle Gallery</title>
+    <title>Younghwa Hairstyle Gallery | 영화 헤어스타일 갤러리</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Hairstyle Gallery</h1>
+    <header class="main-header">
+        <div class="header-content">
+            <h1 class="logo">Younghwagwan</h1>
+            <p class="tagline">당신의 스타일을 완성하는 공간</p>
+        </div>
+        <nav class="category-nav">
+            <button class="nav-btn active" data-category="all">전체</button>
+            <button class="nav-btn" data-category="short">단발/숏컷</button>
+            <button class="nav-btn" data-category="long">긴머리</button>
+            <button class="nav-btn" data-category="curly">펌/웨이브</button>
+            <button class="nav-btn" data-category="trend">트렌드</button>
+        </nav>
     </header>
-    <main>
-        <div id="gallery-container"></div>
+
+    <main class="gallery-wrapper">
+        <div id="gallery-container" class="gallery-grid">
+            <!-- JavaScript가 여기에 카드를 생성합니다. -->
+        </div>
     </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Younghwagwan. All rights reserved.</p>
+    </footer>
+
     <script src="main.js"></script>
 </body>
 </html>
