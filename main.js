@@ -8,9 +8,9 @@ const hairstyles = [
     },
     {
         id: 2,
-        name: '엘레강트 웨이브',
+        name: '레이어드 컷',
         category: 'long',
-        description: '우아한 분위기를 연출하는 굵은 S컬 웨이브',
+        description: '가벼운 층감으로 얼굴형을 보완하고 세련된 무드를 연출하는 스타일',
         imageUrl: 'images/style2.jpg'
     },
     {
