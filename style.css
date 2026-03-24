@@ -31,7 +31,7 @@ body {
 /* Header Styles */
 .main-header {
     background: var(--card-bg);
-    padding: 4rem 1rem 2rem;
+    padding: 2.8rem 1rem 2rem; /* 상단 여백 4rem -> 2.8rem으로 축소 */
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     position: sticky;
