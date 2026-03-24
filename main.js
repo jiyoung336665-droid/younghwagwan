@@ -16,9 +16,9 @@ const hairstyles = [
 
     {
         id: 3,
-        name: '시크 픽시 컷',
-        category: 'short',
-        description: '대담하고 현대적인 매력의 숏컷 스타일',
+        name: '레이어드컷',
+        category: 'long',
+        description: '부드러운 질감 처리로 자연스럽게<br> 흐르는 실루엣을 강조한 스타일',
         imageUrl: 'images/style3.jpg'
     },
     {
