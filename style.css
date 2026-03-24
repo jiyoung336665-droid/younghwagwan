@@ -55,12 +55,22 @@ body {
     transform: scale(1.1);
 }
 
-.logo {
-    font-family: var(--font-heading);
-    font-size: 3.5rem;
+.logo-container {
     margin-bottom: 0.5rem;
-    letter-spacing: -1px;
-    color: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-logo {
+    max-height: 120px; /* 로고 이미지 높이 조절 */
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.main-logo:hover {
+    transform: scale(1.05); /* 마우스 올리면 살짝 확대 */
 }
 
 .tagline {
