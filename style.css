@@ -2,8 +2,8 @@
     --bg-color: #fdfdfd;
     --text-primary: #1a1a1a;
     --text-secondary: #666;
-    --accent-color: #d4af37; /* Gold accent */
-    --accent-glow: rgba(212, 175, 55, 0.4);
+    --accent-color: #800020; /* Burgundy accent */
+    --accent-glow: rgba(128, 0, 32, 0.3);
     --card-bg: #ffffff;
     --shadow-deep: 0 10px 30px rgba(0, 0, 0, 0.1);
     --shadow-lift: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -164,7 +164,7 @@ body {
 }
 
 .sub-nav-btn.active {
-    background-color: rgba(212, 175, 55, 0.1);
+    background-color: rgba(128, 0, 32, 0.08);
     color: var(--accent-color);
     font-weight: 700;
 }
