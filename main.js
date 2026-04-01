@@ -43,8 +43,8 @@ const hairstyles = [
     },
     {
         id: 7,
-        name: '레이어드C컬펌',
-        category: 'women-perm',
+        name: '쉐도우펌',
+        category: 'men-perm',
         description: '가벼운 층감과 안으로 말린 컬로 정돈된 느낌',
         imageUrl: 'images/style7.jpg'
     },
