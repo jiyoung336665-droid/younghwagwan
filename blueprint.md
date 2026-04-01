@@ -21,6 +21,7 @@ This project is a modern, interactive hairstyle gallery designed to help users e
 *   **Responsive Layout:** Fully optimized for mobile and desktop using CSS Grid.
 *   **Rich Content:** Diverse hairstyle examples with titles, categories, and descriptions.
 *   **Visual Effects:** Interactive hover effects (lift & glow) and lazy-loading images.
+*   **Social Media Integration:** Naver Blog and Instagram links added to the header and contact section for easy access.
 
 ## Current Status
-*   The project is fully functional and matches the user's request for a "variety of hairstyles to see".
+*   The project is fully functional and includes social media integration (Instagram, Naver Blog) and reservation links.

@@ -127,8 +127,8 @@ body {
     font-weight: 700;
 }
 
-/* Instagram Link */
-.instagram-link {
+/* Instagram & Blog Links in Header */
+.instagram-link, .blog-link {
     font-size: 1.5rem;
     color: var(--text-primary);
     transition: all 0.3s ease;
@@ -137,6 +137,11 @@ body {
 
 .instagram-link:hover {
     color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.blog-link:hover {
+    color: #03c75a; /* Naver Green */
     transform: scale(1.1);
 }
 
@@ -523,7 +528,7 @@ body {
     font-size: 1rem;
 }
 
-.action-btn.naver {
+.action-btn.naver, .action-btn.blog {
     background-color: #03c75a; /* Naver Green */
     color: white;
 }
