@@ -2,7 +2,7 @@ const hairstyles = [
     {
         id: 1,
         name: '하이레이어드+C컬펌',
-        category: 'women-long',
+        category: 'women-perm',
         description: '볼륨을 극대화 하는 스타일로 얼굴형 보완해주며<br>여성스러우며 생기 넘치는 스타일',
         imageUrl: 'images/style1.jpg'
     },
@@ -22,23 +22,23 @@ const hairstyles = [
     },
     {
         id: 4,
-        name: '히피펌',
+        name: '하이레이어드 C컬펌',
         category: 'women-perm',
         description: '자유분방하고 개성 넘치는 볼륨감 있는 펌',
         imageUrl: 'images/style4.jpg'
     },
     {
         id: 5,
-        name: '애쉬브라운발레아쥬',
+        name: '매트브라운',
         category: 'women-color',
-        description: '자연스러운 그라데이션이 돋보이는 컬러링',
+        description: '붉은느낌 없는 차분한 컬러',
         imageUrl: 'images/style5.jpg'
     },
     {
         id: 6,
-        name: '내추럴로우번',
-        category: 'women-long',
-        description: '격식 있는 자리나 일상에서도 잘 어울리는 묶음 머리',
+        name: '여성긴머리울프컷',
+        category: 'women-short',
+        description: '유니크하고 가벼운 텍스쳐의 스타일',
         imageUrl: 'images/style6.jpg'
     },
     {
