@@ -64,7 +64,9 @@ const hairstyles = [
     { id: 14, name: '테일펌', category: 'men-perm', description: '부드러운 이미지와 자유분방한 텍스처를<br>함께 즐길 수 있는 남성 스타일', imageUrl: 'images/style14.jpg' },
     { id: 15, name: '세미슬릭댄디컷', category: 'men-medium', description: '내추럴한 텍스쳐를 즐길 수 있는 스타일', imageUrl: 'images/style15.jpg' },
     { id: 16, name: '세미슬릭댄디컷', category: 'men-medium', description: '내추럴한 텍스쳐와 볼륨을 즐길 수 있는 스타일', imageUrl: 'images/style16.jpg' },
+
     { id: 17, name: '스타일준비중', category: 'men-perm', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style17.jpg' },
+    
     { id: 18, name: '스타일준비중', category: 'men-color', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style18.jpg' },
     { id: 19, name: '스타일준비중', category: 'women-long', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style19.jpg' },
     { id: 20, name: '스타일준비중', category: 'women-bob', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style20.jpg' },
@@ -214,7 +216,7 @@ document.addEventListener('click', (e) => {
                 appendMessage('<img src="assets/price/price_list.jpg" alt="Price List" onerror="this.src=\'https://via.placeholder.com/300x400?text=Price+List+Coming+Soon\'">', 'bot');
             }, 500);
         } else if (action === 'location') {
-            appendMessage('영화관 헤어 스튜디오 위치는 다음과 같습니다:<br><strong>서울 마포구 토정로 17-9 HOMELEY</strong>', 'bot');
+            appendMessage('영화관 헤어 스튜디오 위치는 다음과 같습니다:<br><strong>준비 중 입니다.</strong>', 'bot');
         } else if (action === 'contact') {
             appendMessage('스타일리스트와 직접 소통하고 싶으시면 인스타그램을 방문해 주세요!<br><a href="https://www.instagram.com/0_a_hair/?hl=ko" target="_blank" style="color:var(--accent-color); font-weight:700;">인스타그램 바로가기</a>', 'bot');
         }
