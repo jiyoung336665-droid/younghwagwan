@@ -662,3 +662,113 @@ body {
     }
 }
 
+/* Resume/About Page Enhanced Styles */
+.resume-section {
+    background: white;
+    border-radius: 30px;
+    box-shadow: var(--shadow-deep);
+    padding: 3rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.resume-header {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.resume-intro h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.resume-intro p {
+    color: var(--text-secondary);
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+}
+
+.resume-intro a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.resume-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.resume-card {
+    margin-bottom: 2.5rem;
+}
+
+.resume-card h3 {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    border-left: 4px solid var(--accent-color);
+    padding-left: 1rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+}
+
+.resume-card p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.resume-card ul {
+    list-style: none;
+    padding-left: 0.5rem;
+}
+
+.resume-card li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.6rem;
+    color: var(--text-secondary);
+}
+
+.resume-card li::before {
+    content: "•";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.job {
+    margin-bottom: 2rem;
+}
+
+.job h4 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.2rem;
+}
+
+.job .date {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .resume-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .resume-body {
+        grid-template-columns: 1fr;
+    }
+}
+
