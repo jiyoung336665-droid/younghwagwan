@@ -65,21 +65,10 @@ const hairstyles = [
     { id: 15, name: '세미슬릭댄디컷', category: 'men-medium', description: '내추럴한 텍스쳐를 즐길 수 있는 스타일', imageUrl: 'images/style15.jpg' },
     { id: 16, name: '세미슬릭댄디컷', category: 'men-medium', description: '내추럴한 텍스쳐와 볼륨을 즐길 수 있는 스타일', imageUrl: 'images/style16.jpg' },
 
-    { id: 17, name: '숏가일컷', category: 'men-perm', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style17.jpg' },
+    { id: 17, name: '숏가일컷', category: 'men-short', description: '섹시한 무드의 정석<br>남성 짧은 머리 추천 스타일', imageUrl: 'images/style17.jpg' },
     
-    { id: 18, name: '스타일준비중', category: 'men-color', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style18.jpg' },
-    { id: 19, name: '스타일준비중', category: 'women-long', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style19.jpg' },
-    { id: 20, name: '스타일준비중', category: 'women-bob', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style20.jpg' },
-    { id: 21, name: '스타일준비중', category: 'women-short', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style21.jpg' },
-    { id: 22, name: '스타일준비중', category: 'women-perm', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style22.jpg' },
-    { id: 23, name: '스타일준비중', category: 'women-color', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style23.jpg' },
-    { id: 24, name: '스타일준비중', category: 'men-short', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style24.jpg' },
-    { id: 25, name: '스타일준비중', category: 'men-medium', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style25.jpg' },
-    { id: 26, name: '스타일준비중', category: 'men-long', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style26.jpg' },
-    { id: 27, name: '스타일준비중', category: 'men-perm', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style27.jpg' },
-    { id: 28, name: '스타일준비중', category: 'men-color', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style28.jpg' },
-    { id: 29, name: '스타일준비중', category: 'women-long', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style29.jpg' },
-    { id: 30, name: '스타일준비중', category: 'women-bob', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style30.jpg' }
+    { id: 18, name: '레드오렌지', category: 'women-color', description: '얼굴빛이 환하게 돋보이는 컬러', imageUrl: 'images/style18.jpg' },
+    { id: 19, name: '시크릿투톤 레드', category: 'women-color', description: '특별한 나만의 스타일', imageUrl: 'images/style19.jpg' }
 ];
 
 const galleryContainer = document.getElementById('gallery-container');
