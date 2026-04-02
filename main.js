@@ -65,7 +65,7 @@ const hairstyles = [
     { id: 15, name: '세미슬릭댄디컷', category: 'men-medium', description: '내추럴한 텍스쳐를 즐길 수 있는 스타일', imageUrl: 'images/style15.jpg' },
     { id: 16, name: '세미슬릭댄디컷', category: 'men-medium', description: '내추럴한 텍스쳐와 볼륨을 즐길 수 있는 스타일', imageUrl: 'images/style16.jpg' },
 
-    { id: 17, name: '스타일준비중', category: 'men-perm', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style17.jpg' },
+    { id: 17, name: '숏가일컷', category: 'men-perm', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style17.jpg' },
     
     { id: 18, name: '스타일준비중', category: 'men-color', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style18.jpg' },
     { id: 19, name: '스타일준비중', category: 'women-long', description: '새로운 스타일이<br>곧 업데이트됩니다.', imageUrl: 'images/style19.jpg' },
