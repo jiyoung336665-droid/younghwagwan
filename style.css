@@ -547,3 +547,118 @@ body {
 .category-nav a {
     text-decoration: none;
 }
+
+/* About Page Styles */
+.about-wrapper {
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.profile-container {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+    background: white;
+    padding: 3rem;
+    border-radius: 30px;
+    box-shadow: var(--shadow-deep);
+}
+
+.profile-image {
+    flex: 0 0 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lift);
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-name {
+    margin-bottom: 1.5rem;
+}
+
+.profile-name h3 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 0.2rem;
+}
+
+.profile-name span {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.profile-bio {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-primary);
+    margin-bottom: 2.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--accent-color);
+    font-style: italic;
+}
+
+.profile-career h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.profile-career ul {
+    list-style: none;
+}
+
+.profile-career li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.profile-career li i {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+/* Responsive for About Page */
+@media (max-width: 900px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    .profile-image {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .profile-name {
+        text-align: center;
+    }
+}
+
